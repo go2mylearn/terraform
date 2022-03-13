@@ -1,0 +1,42 @@
+site_name: Terraform Labs
+plugins:
+    - search
+    - with-pdf
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - codehilite
+  - attr_list
+
+nav:
+    - 'Installation':
+        - 'Installer Terraform': 'terraform-install.md'
+    - 'Premiers Pas':
+        - 'Premiers Pas': 'premierspas.md'
+    - "Graph":
+        - 'Graph': 'graph.md'
+    - "L'Inventaire dynamique":
+        - 'Lab3 énoncé': 'lab3.md'
+        - 'Lab3 solution': 'lab3sol.md'
+    - 'Les PlayBooks':
+        - 'Lab4 énoncé': 'lab4.md'
+        - 'Lab4 solution': 'lab4sol.md'
+    - 'Jinja2':
+        - 'Lab5 énoncé': 'lab5.md'
+        - 'Lab5 solution': 'lab5sol.md'
+    - 'Roles':
+        - 'Lab6 énoncé': 'lab6.md'
+        - 'Lab6 solution': 'lab6sol.md'
+    - 'Vault':
+        - 'Lab7 énoncé': 'lab7.md'
+        - 'Lab7 solution': 'lab7sol.md'
+    - 'Network':
+        - 'Lab8 énoncé': 'lab8.md'
+        - 'Lab8 solution': 'lab8sol.md'
+        - 'Lab9 solution': 'lab9sol.md'
+
+
+theme: 
+    name: material

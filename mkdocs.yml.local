@@ -1,0 +1,41 @@
+site_name: Ansible Labs
+plugins:
+    - search
+    - pdf-export:
+        verbose: false
+        media_type: print
+        enabled_if_env: ENABLE_PDF_EXPORT
+        combined: true
+markdown_extensions:
+  - admonition
+  - codehilite
+  - attr_list
+nav:
+    - index.md
+    - 'Installation':
+        - 'Installer Ansible': 'ansible-install.md'
+        - 'Configurer Ansible': 'ansible-configure.md'
+    - 'Les Commandes AD HOC':
+        - 'Lab1 énoncé': 'lab1.md'
+        - 'Lab1 solution': 'lab1sol.md'
+    - "L'Inventaire":
+        - 'Lab2 énoncé': 'lab2.md'
+        - 'Lab2 solution': 'lab2sol.md'
+    - "L'Inventaire dynamique":
+        - 'Lab3 énoncé': 'lab3.md'
+        - 'Lab3 solution': 'lab3sol.md'
+    - 'Les PlayBooks':
+        - 'Lab4 énoncé': 'lab4.md'
+        - 'Lab4 solution': 'lab4sol.md'
+    - 'Jinja2':
+        - 'Lab5 énoncé': 'lab5.md'
+        - 'Lab5 solution': 'lab5sol.md'
+    - 'Les rôles':
+        - 'Lab6 énoncé': 'lab6.md'
+        - 'Lab6 solution': 'lab6sol.md'
+    - 'Vault':
+        - 'Lab7 énoncé': 'lab7.md'
+        - 'Lab7 solution': 'lab7sol.md'
+
+theme: 
+    name: material

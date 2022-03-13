@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+
+   mkdocs:
+     image: nginx:1.19-alpine
+     volumes:
+        - ./site:/usr/share/nginx/html
+        - ./.htpasswd:/etc/nginx/.htpasswd
+        - ./default.conf:/etc/nginx/conf.d/default.conf
+     expose:
+        - 80
+     restart: always
+     environment:
+        VIRTUAL_HOST: kubernetes.mylearn.website
+        LETSENCRYPT_HOST: kubernetes.mylearn.website
+        LETSENCRYPT_EMAIL: samir.lakhdari@mac.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
