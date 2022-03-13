@@ -1,4 +1,4 @@
-## Initialisation
+## Première Initialisation
 Créer un répertoire **www**
 Créer le fichier **main.tf** pour initialiser l'environnement **terraform** avec le provider **aws**
 ??? Solution
